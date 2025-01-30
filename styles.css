@@ -1,0 +1,105 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+*, *:before, *:after{
+    box-sizing: inherit;
+}
+html{
+    font-family: "Roboto", serif;
+    background-color: black;
+    font-size: 16px;
+}
+h1{
+    font-size: 1.5rem;
+}
+h2{
+    font-size: 1rem;
+}
+/*
+================
+CONTAINER STYLES
+================
+*/
+.container{
+    display: grid;
+    height: 100vh;
+    align-items: center;
+}
+.card{
+    background-color: white;
+    width: 70%;
+    margin:5% auto;
+    padding: 20px;
+    border-radius: 15px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 70px 70px 1fr;
+    justify-content: center;
+}
+.top{
+    margin: auto;
+}
+/*
+============
+INNER STYLES
+============
+*/
+.addtask{
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.addButton{
+    background-color: lightgreen;
+    padding: 15px;
+    border-radius: 25px;
+}
+
+.addButton:hover{
+    background-color: rgb(114, 189, 114);
+}
+#task-input{
+    height: 40px;
+    width: 85%;
+    border-radius: 7px;
+}
+.adding-status{
+    margin: auto;
+    margin-bottom: 10px;
+    height: 16px;
+}
+.task-list{
+    width: 100%;
+}
+.task-box{
+    border-radius: 7px;
+    background-color: pink;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+.left-task{
+    display: flex;
+}
+.right-task i, .left-task i{
+    padding-right: 10px;
+}
+i:hover{
+    opacity: 0.5;
+}
+.red-font{
+    color: red;
+}
+.green-font{
+    color: lightgreen;
+}
+.edit-input{
+    border: none;
+    background-color: rgba(255, 255, 255, 0);
+}
