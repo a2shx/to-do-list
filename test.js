@@ -7,6 +7,6 @@ addButton.addEventListener('click', ()=> {
 })
 taskTitle.addEventListener('click', (e) => {
     if (!e.target.classList.contains('.edit-input')) {
-        disInput();
+    
     }
 })
