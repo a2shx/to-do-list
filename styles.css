@@ -26,6 +26,8 @@ CONTAINER STYLES
     display: grid;
     height: 100vh;
     align-items: center;
+    margin: auto;
+    max-width: 1000px;
 }
 .card{
     background-color: white;
@@ -35,7 +37,7 @@ CONTAINER STYLES
     border-radius: 15px;
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 70px 70px 1fr;
+    grid-template-rows: 70px 70px 30px auto auto;
     justify-content: center;
 }
 .top{
@@ -68,6 +70,9 @@ INNER STYLES
     width: 85%;
     border-radius: 7px;
 }
+#task-input:focus{
+    outline: none;
+}
 .adding-status{
     margin: auto;
     margin-bottom: 10px;
@@ -78,7 +83,6 @@ INNER STYLES
 }
 .task-box{
     border-radius: 7px;
-    background-color: pink;
     padding: 15px;
     display: flex;
     justify-content: space-between;
@@ -97,7 +101,7 @@ i:hover{
     color: red;
 }
 .green-font{
-    color: lightgreen;
+    color: green;
 }
 .edit-input{
     border: none;
@@ -105,4 +109,13 @@ i:hover{
 }
 .edit-input:focus{
     outline: none;
+}
+.strkie-out{
+    text-decoration: line-through;
+}
+.pink-bg{
+    background-color: pink;
+}
+.green-bg{
+    background-color: lightgreen;
 }
