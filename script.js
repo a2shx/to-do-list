@@ -29,12 +29,21 @@ addTodoButton.addEventListener('click', () => {
             editTask.classList.add('fa-solid','fa-pencil','edit-task');
             editTask.addEventListener('click', () => {
                 taskTitle.removeAttribute('disabled');
+                taskTitle.focus();
+
+                document.addEventListener('click', (e) => {
+                    if (e.target !== taskTitle && e.target !== editTask) {
+                        taskTitle.setAttribute('disabled', true);
+                    }
+                })
+                document.addEventListener('keydown', (e) => {
+                    if(e.key === 'Enter'){
+                        taskTitle.setAttribute('disabled', true);
+                    }
+                })
+
             })
-            taskTitle.addEventListener('click', (e) => {
-                if (!e.target.classList.contains('edit-input')) {
-                    taskTitle.setAttribute('disabled',true);
-                }
-            })
+           
 
 
             const removeTask = document.createElement('i');
