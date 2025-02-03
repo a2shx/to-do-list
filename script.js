@@ -9,7 +9,7 @@ addTodoButton.addEventListener('click', () => {
     createTaskBox();
 })
 document.addEventListener('keydown', (e) => {
-    if(e.key === 'Enter'){
+    if(e.key === 'Enter' && e.target === taskInput){
         createTaskBox();
     }
 })
